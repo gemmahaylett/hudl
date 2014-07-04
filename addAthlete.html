@@ -1,0 +1,285 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Hudl Product Design Challenge</title>
+
+    <link rel="stylesheet" type="text/css" href="css/MyFontsWebfontsKit.css">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css" >
+
+    <!-- Hudl core CSS -->
+    <link rel="stylesheet" href="css/hudl.css">
+
+  </head>
+
+  <body>
+
+    <!-- Static navbar -->
+    <div class="navbar navbar-default navbar-static-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">hudl</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">Video</a></li>
+            <li><a href="#contact">Highlights</a></li>
+            <li><a href="#contact">Team</a></li>
+            <li><a href="#contact">Coaching Tools</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="../navbar/">Coach Haylett</a></li>
+            <li><a href="./"><span class="glyphicon glyphicon-envelope"></span></a></li>
+            <li><a href="../navbar-fixed-top/"><span class="glyphicon glyphicon-question-sign"></span></a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+
+    <div class="container">
+
+      <!-- Main component for a primary marketing message or call to action -->
+      <div class="roster-header">
+        <h1>Manage Roster</h1>
+          <div class="header-detail">
+            <h4>Hudl - JV Football (UX)</h4>
+            <p>Add new or edit athlete info</p>
+          </div>
+          <div class="edit-photo">
+              <img scr=""
+          </div>
+      </div>
+
+
+      <h2>Add Athlete</h2>
+
+      <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                <span class="glyphicon glyphicon-plus-sign"></span>Athlete General Information
+              </a>
+            </h3>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse in">
+            <div class="panel-body">
+              <div class="row">
+              <form role="form">
+                <div class="form-group col-md-6">
+                  <label for="firstName">First Name*</label>
+                  <input type="email" class="form-control" id="firstName">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="lastName">Last Name*</label>
+                  <input type="password" class="form-control" id="lastName">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="email">Email</label>
+                  <input type="email" class="form-control" id="email">
+                </div>
+                <div class="form-group col-md-1">
+                  <label for="jerseyNum">Jersey #</label>
+                  <input type="email" class="form-control" id="jerseyNum">
+                </div>
+                <div class="form-group col-md-1">
+                  <div class="grade-dropdown">
+                    <label for="grade">Grade</label>
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                      Grade
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">FR</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">SO</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">JR</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">SR</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="form-group col-md-2">
+                  <div class="grade-dropdown">
+                    <label for="grade">Position</label>
+                    <button class="btn btn-default dropdown-toggle btn-block" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                      Position
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">QB</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">RB</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">SB</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">FB</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="form-group col-md-2">
+                  <div class="grade-dropdown">
+                    <label for="grade">Season</label>
+                    <button class="btn btn-default dropdown-toggle btn-block" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                      Season
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2012-2013 Season</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2013-2014 Season</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2014-2015 Season</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2015-2016 Season</a></li>
+                      
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-md-1">
+                  <label for="jerseyNum">FT</label>
+                  <input type="email" class="form-control" id="jerseyNum">
+                </div>
+                <div class="form-group col-md-1">
+                  <label for="jerseyNum">IN</label>
+                  <input type="email" class="form-control" id="jerseyNum">
+                </div>
+                <div class="form-group col-md-1">
+                  <label for="jerseyNum">Weight</label>
+                  <input type="email" class="form-control" id="jerseyNum">
+                </div>
+              </div>
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                <span class="glyphicon glyphicon-plus-sign"></span>Athlete Contact Information
+              </a>
+            </h3>
+          </div>
+          <div id="collapseTwo" class="panel-collapse collapse in">
+            <div class="panel-body">
+              <form role="form">
+                <div class="form-group col-md-4">
+                  <label for="firstName">Cell Phone</label>
+                  <input type="email" class="form-control" id="firstName">
+                </div>
+                <div class="form-group col-md-2">
+                  <div class="grade-dropdown">
+                    <label for="grade">Cell Carrier</label>
+                    <button class="btn btn-default dropdown-toggle btn-block" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                      Cell Carrier
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Other</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Alltel</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">AT&amp;T Wireless</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Cricket</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="firstName">Home Phone</label>
+                  <input type="email" class="form-control" id="firstName">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="lastName">Address</label>
+                  <input type="password" class="form-control" id="lastName">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="email">Suite #, Apt#, etc.</label>
+                  <input type="email" class="form-control" id="email">
+                </div>
+                <div class="form-group col-md-1">
+                  <label for="jerseyNum">City</label>
+                  <input type="email" class="form-control" id="jerseyNum">
+                </div>
+                <div class="form-group col-md-1">
+                  <label for="jerseyNum">State</label>
+                  <input type="email" class="form-control" id="jerseyNum">
+                </div>
+                <div class="form-group col-md-2">
+                  <label for="jerseyNum">Zip Code</label>
+                  <input type="email" class="form-control" id="jerseyNum">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                <span class="glyphicon glyphicon-plus-sign"></span>Parent/Guardian Information
+              </a>
+            </h3>
+          </div>
+          <div id="collapseThree" class="panel-collapse collapse in">
+            <div class="panel-body">
+              <form role="form">
+                <div class="form-group col-md-6">
+                  <label for="firstName">Parent/Guardian #1 Name</label>
+                  <input type="email" class="form-control" id="firstName">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="firstName">Parent/Guardian #2 Name</label>
+                  <input type="email" class="form-control" id="firstName">
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="firstName">Cell Phone #1</label>
+                  <input type="email" class="form-control" id="firstName">
+                </div>
+                <div class="form-group col-md-4 col-md-offset-2">
+                  <label for="firstName">Cell Phone #2</label>
+                  <input type="email" class="form-control" id="firstName">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+        
+
+
+
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
