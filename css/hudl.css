@@ -1,0 +1,198 @@
+.TradeGothicLTPro-Cn18 { 
+  font-family: TradeGothicLTPro-Cn18;
+  font-weight: normal;
+  font-style: normal;
+}
+.TradeGothicLTPro-BdCn20 { 
+  font-family: TradeGothicLTPro-BdCn20;
+  font-weight: normal;
+  font-style: normal;
+}
+
+body{
+  font-family: 'TradeGothicLTPro-BdCn18'; 
+}
+
+h4, h5, p, a, button, span, label{
+  font-family: 'TradeGothicLTPro-Cn18';
+}
+
+h1 span{
+  font-size: 25px;
+}
+
+h1{
+  font-family: 'TradeGothicLTPro-BdCn20';
+}
+
+.background-container{
+  background-color: #EEE;
+  padding-right: 60px;
+  padding-left: 60px;
+}
+
+.roster-header{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.add-btn-group{
+  margin-top: 20px;
+}
+
+.search-athletes{
+  padding-top: 15px;
+  paddint-bottom: 15px;
+}
+
+.form-group{
+  margin-bottom: 0px;
+  padding-top: 8px;
+  color: #FFF;
+}
+
+.checkbox{
+  padding: 5px;
+  color: #FFF;
+}
+
+.player-info, .player-stats{
+  display: inline-block;
+}
+
+ul{
+  list-style-type: none;
+}
+
+.player-stats {
+  color: #FFF;
+  vertical-align: middle;
+}
+
+.player-stats  p{
+  padding: 1px 28px;
+  font-size: 45px;
+  font-family: ;
+  font-family:'bebas_neueregular';
+}
+
+.player-stats.sr{
+  background-color: #FF6600;
+}
+
+.player-stats.jr{
+  background-color: #4646B4;
+}
+
+.player-stats.so{
+  background-color: #46B446;
+}
+
+.player-stats.fr{
+  background-color: #6B6B6B;
+}
+
+.header-detail, .roster-btngrp{
+  display: inline-block;
+}
+
+.roster-btngrp{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.roster li{
+  background-color: #eee;
+}
+
+.item{
+   margin-bottom: 50px;
+}
+
+.player-btn .btn{
+   background-color: #eee;
+}
+
+.player-btn .btn-group{
+   margin: 10px 0;
+}
+
+.player-detail{
+   display:none;
+}
+
+label{
+  color: #000;
+}
+
+.grade-dropdown button{
+  display:block;
+}
+
+.search-bar{
+   background-color: #EEE;
+   padding: 20px 20px;
+   margin: 10px 0px;
+}
+
+h1{
+   margin-top: 0px;
+}
+
+.item.list-group-item
+{
+    float: none;
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+.item.list-group-item .list-group-image
+{
+    margin-right: 10px;
+}
+.item.list-group-item .thumbnail
+{
+    margin-bottom: 0px;
+}
+.item.list-group-item .caption
+{
+    padding: 9px 9px 0px 9px;
+}
+.item.list-group-item:nth-of-type(odd)
+{
+    background: #eeeeee;
+}
+
+.item.list-group-item:before, .item.list-group-item:after
+{
+    display: table;
+    content: " ";
+}
+
+.item.list-group-item img
+{
+    float: left;
+}
+.item.list-group-item:after
+{
+    clear: both;
+}
+.list-group-item-text
+{
+    margin: 0 0 11px;
+}
+
+.player-view{
+   margin-top: 10px;
+}
+
+.row{
+   margin-right: 0px;
+   margin-left: 0px;
+}
+
+.panel-body{
+   padding: 0px;
+}
