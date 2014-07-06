@@ -13,11 +13,15 @@ body{
   font-family: 'TradeGothicLTPro-BdCn18'; 
 }
 
-h4, h5, p, a, button, span, label, .dropdown-header{
+h4, h5, a, button, span, label, .dropdown-header{
   font-family: 'TradeGothicLTPro-Cn18';
 }
 
-input{
+.navbar a, .navbar label{
+  font-family: sans-serif;
+}
+
+input, p{
   font-family: sans-serif;
 }
 
