@@ -27,13 +27,7 @@
     <div class="navbar navbar-default navbar-static-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">hudl</a>
+          <a class="navbar-brand" href="#"><img src="http://sc.hudl.com/images/hudl-logo-white.png"></a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
@@ -63,27 +57,33 @@
           </div>
           <div class="roster-btngrp">
             <p>
-              <button type="button" class="btn btn-primary">Import Roster</button>
-              <button type="button" class="btn btn-primary"><a href="addAthlete.html">Add Athlete</a></button>
+              <a class="btn btn-primary">Import Roster</a>
+              <a class="btn btn-primary" href="addAthlete.html">Add Athlete</a>
             </p>
          </div>
+         <div class="search-bar">
+            <input type="search" class="form-control col-md-5" placeholder="Search">
+         </div>
       </div>
-      <div class="search-bar">
+      <!--<div class="search-bar">
          <form class="form-horizontal" role="form">
            <div class="form-group">
              <div class="col-sm-10">
-               <input type="search" class="form-control" placeholder="Search">
+               
              </div>
              <div class="col-sm-2">
                <button type="button" class="btn btn-primary btn-block">Search</button>
              </div>
            </div>
          </form>
-      </div>
+      </div>-->
 
       <!-- Filter/Sort Nav Bar -->
       <div class="navbar navbar-default" role="navigation">
         <div class="container-fluid">
+          <div class="navbar-header">
+            <label class="nav-label">Filter By:</label>
+          </div>
           <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
               <li class="dropdown">
@@ -112,8 +112,11 @@
                   <li class="active"><a href="#" class="all">All</a></li>
                   <li><a href="#" class="qb">QB</a></li>
                   <li><a href="#" class="te">TE</a></li>
-                  <li><a href="#" class="de">DE</a></li>
-                  <li><a href="#" class="ss">SS</a></li>
+                  <li><a href="#" class="g">G</a></li>
+                  <li><a href="#" class="p">P</a></li>
+                  <li><a href="#" class="lb">LB</a></li>
+                  <li><a href="#" class="rb">RB</a></li>
+                  <li><a href="#" class="wr">WR</a></li>
                 </ul>
                 </li>
               <li class="checkbox">
@@ -137,138 +140,408 @@
       <!-- Player Cards -->
       <!-- Filter/Sort Nav Bar -->
       <div id="roster">
-          <div class="item jr 2014-2015 qb col-md-3">
-            <img alt="Inviting athlete" width="250" src="http://a.espncdn.com/i/headshots/nfl/players/full/14001.png"/>
-              <h4>Colin Kapernick</h4>
-              <h5>QB</h5>
-              <span class="glyphicon glyphicon-phone"> (408)483-8110</span><br>
-              <span class="glyphicon glyphicon-envelope"> kapernick@49ers.com</span><br>
-              <span class="glyphicon glyphicon-facetime-video">&nbsp;3&nbsp;days&nbsp;ago</span>
-              <div id="collapseOne" class="panel-collapse collapse">
-               <div class="panel-body">
-                 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-               </div>
-             </div>
-              <div class="row player-btn">
-                 <div class="btn-group btn-group-justified">
-                    <div class="btn-group">
-                        <button id="player-view1" type="button" class="btn btn-default"><a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">View</a></button>
+        <div class="item so 2012-2013 qb col-md-3 grid-group-item">
+         <div class="row">
+                <div class="profile-layout-img col-md-12">
+                    <img alt="Inviting athlete" src="http://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/13987.png"/>
+                </div>
+                <div class="profile-layout-header col-md-10"><h4>#2 Gabbert, Blaine</h4></div>
+                <div class="profile-layout-grade col-md-2"><span class="position-label so-label">SO</span></div>
+                <div class="profile-layout-position col-md-12">
+                  <span>QB</span>
+                </div>
+                <div class="profile-layout-phone col-md-12">
+                  <span class="glyphicon glyphicon-phone"></span><span> 765-808-1178</span>
+                </div>
+                <div class="profile-layout-email col-md-12">
+                  <span class="glyphicon glyphicon-envelope"></span><span> gabbert@49ers.com</span>
+                </div>
+                <div class="profile-layout-video col-md-12">
+                  <span class="glyphicon glyphicon-facetime-video"></span><span>&nbsp;3&nbsp;days&nbsp;ago</span>
+                </div>
+                <div class="profile-layout-btn col-md-12">
+                  <div class="dropdown">
+                     <button class="btn btn-default dropdown-toggle btn-block" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                    Action
+                    <span class="caret"></span>
+                    </button>   
+                       <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                        <li role="presentation" class="dropdown-header">Edit</li>
+                        <li><a href="#">Update Player Info</a></li>
+                        <li><a href="#">Delete</a></li>
+                        <li><a href="#">Deactivate</a></li>
+                        <li role="presentation" class="divider"></li>
+                        <li role="presentation" class="dropdown-header">Contact</li>
+                        <li><a href="#">Invite to hudl</a></li>
+                        <li><a href="#">Remind to watch video</a></li>
+                      </ul>
                     </div>
-                    <div class="btn-group">
-                     <button type="button" class="btn btn-default">Edit</button>
-                    </div>
-                    <div class="btn-group">
-                     <button type="button" class="btn btn-default">Invite</button>
-                    </div>
-                  </div>
-               </div>
-            </div>
-          <div class="item so 2013-2014 te col-md-3">
-            <img alt="Inviting athlete" width="250" src="http://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/8479.png"/>
-              <h4>Colin Kapernick</h4>
-              <h5>QB</h5>
-              <span class="glyphicon glyphicon-phone"> (408)483-8110</span><br>
-              <span class="glyphicon glyphicon-envelope"> kapernick@49ers.com</span><br>
-              <span class="glyphicon glyphicon-facetime-video">&nbsp;3&nbsp;days&nbsp;ago</span>
-              <div id="collapseTwo" class="panel-collapse collapse">
-               <div class="panel-body">
-                 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-               </div>
-             </div>
-              <div class="row player-btn">
-                 <div class="btn-group btn-group-justified">
-                    <div class="btn-group">
-                        <button id="player-view2" type="button" class="btn btn-default"><a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">View</a></button>
-                    </div>
-                    <div class="btn-group">
-                    <button type="button" class="btn btn-default">Edit</button>
-                    </div>
-                    <div class="btn-group">
-                    <button type="button" class="btn btn-default">Invite</button>
-                    </div>
-                  </div>
-               </div>
+                </div>
         </div>
-          <div class="item sr 2015-2016 de col-md-3 inactive">       
-            <img alt="Inviting athlete" src="http://placehold.it/250x182"/>
-              <h4>Colin Kapernick</h4>
-              <h5>QB</h5>
-              <span class="glyphicon glyphicon-phone"> (408)483-8110</span><br>
-              <span class="glyphicon glyphicon-envelope"> kapernick@49ers.com</span><br>
-              <span class="glyphicon glyphicon-facetime-video">&nbsp;3&nbsp;days&nbsp;ago</span>
-              <div id="collapseThree" class="panel-collapse collapse">
-                  <div class="panel-body">
-                    <span class="glyphicon glyphicon-home">505 Cypress Point Dr #78</span><br>
-                    <span>Mountain View, CA 94043</span><br>
-                    <span>&nbsp;3&nbsp;days&nbsp;ago</span>
-                  </div>
-               </div>
-               <div class="row player-btn">
-                 <div class="btn-group btn-group-justified">
-                    <div class="btn-group">
-                        <button id="player-view3" type="button" class="btn btn-default"><a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">View</a></button>
+        </div>
+        <div class="item sr 2013-2014 p col-md-3 grid-group-item">
+             <div class="row">
+                <div class="profile-layout-img col-md-12">
+                    <img alt="Inviting athlete" src="http://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/5713.png"/>
+                </div>
+                <div class="profile-layout-header col-md-10"><h4>#4 Lee, Andy</h4></div>
+                <div class="profile-layout-grade col-md-2"><span class="position-label sr-label">SR</span></div>
+                <div class="profile-layout-position col-md-12">
+                  <span>P</span>
+                </div>
+                <div class="profile-layout-phone col-md-12">
+                  <span class="glyphicon glyphicon-phone"></span><span> 765-808-1178</span>
+                </div>
+                <div class="profile-layout-email col-md-12">
+                  <span class="glyphicon glyphicon-envelope"></span><span> lee@49ers.com</span>
+                </div>
+                <div class="profile-layout-video col-md-12">
+                  <span class="glyphicon glyphicon-facetime-video"></span><span>&nbsp;3&nbsp;days&nbsp;ago</span>
+                </div>
+                <div class="profile-layout-btn col-md-12">
+                  <div class="dropdown">
+                     <button class="btn btn-default dropdown-toggle btn-block" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                    Action
+                    <span class="caret"></span>
+                    </button>   
+                       <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                        <li role="presentation" class="dropdown-header">Edit</li>
+                        <li><a href="#">Update Player Info</a></li>
+                        <li><a href="#">Delete</a></li>
+                        <li><a href="#">Deactivate</a></li>
+                        <li role="presentation" class="divider"></li>
+                        <li role="presentation" class="dropdown-header">Contact</li>
+                        <li><a href="#">Invite to hudl</a></li>
+                        <li><a href="#">Remind to watch video</a></li>
+                      </ul>
                     </div>
-                    <div class="btn-group">
-                    <button type="button" class="btn btn-default">Edit</button>
+                </div>
+        </div>
+        </div>
+      <div class="item sr 2015-2016 qb col-md-3 grid-group-item">       
+          <div class="row">
+                <div class="profile-layout-img col-md-12">
+                    <img alt="Inviting athlete" src="http://a.espncdn.com/i/headshots/nfl/players/full/14001.png"/>
+                </div>
+                <div class="profile-layout-header col-md-10"><h4>#7 Colin Kaepernick</h4></div>
+                <div class="profile-layout-grade col-md-2"><span class="position-label sr-label">SR</span></div>
+                <div class="profile-layout-position col-md-12">
+                  <span>QB</span>
+                </div>
+                <div class="profile-layout-phone col-md-12">
+                  <span class="glyphicon glyphicon-phone"></span><span> (408)483-8110</span>
+                </div>
+                <div class="profile-layout-email col-md-12">
+                  <span class="glyphicon glyphicon-envelope"></span><span> kaepernick@49ers.com</span>
+                </div>
+                <div class="profile-layout-video col-md-12">
+                  <span class="glyphicon glyphicon-facetime-video"></span><span>&nbsp;3&nbsp;days&nbsp;ago</span>
+                </div>
+                <div class="profile-layout-btn col-md-12">
+                  <div class="dropdown">
+                     <button class="btn btn-default dropdown-toggle btn-block" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                    Action
+                    <span class="caret"></span>
+                    </button>   
+                       <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                        <li role="presentation" class="dropdown-header">Edit</li>
+                        <li><a href="viewAthlete.html">Update Player Info</a></li>
+                        <li><a href="#">Delete</a></li>
+                        <li><a href="#">Deactivate</a></li>
+                        <li role="presentation" class="divider"></li>
+                        <li role="presentation" class="dropdown-header">Contact</li>
+                        <li><a href="#">Invite to hudl</a></li>
+                        <li><a href="#">Remind to watch video</a></li>
+                      </ul>
                     </div>
-                    <div class="btn-group">
-                    <button type="button" class="btn btn-default">Invite</button>
-                    </div>
-                  </div>
-               </div>
+                </div>
+        </div>
           </div>
-           <div class="item sr 2015-2016 de col-md-3 inactive">
-            <img alt="Inviting athlete" src="http://placehold.it/250x182"/>
-              <h4>Colin Kapernick</h4>
-              <h5>QB</h5>
-              <span class="glyphicon glyphicon-phone"> (408)483-8110</span><br>
-              <span class="glyphicon glyphicon-envelope"> kapernick@49ers.com</span><br>
-              <span class="glyphicon glyphicon-facetime-video"> 3&nbsp;days</span>
-              <div id="collapseFour" class="panel-collapse collapse">
-               <div class="panel-body">
-                 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-               </div>
-             </div>
-              <div class="row player-btn">
-                 <div class="btn-group btn-group-justified">
-                    <div class="btn-group">
-                        <button id="player-view4" type="button" class="btn btn-default"><a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">View</a></button>
+      <div class="item jr 2015-2016 wr col-md-3 grid-group-item">
+        <div class="row">
+                <div class="profile-layout-img col-md-12">
+                    <img alt="Inviting athlete" src="http://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/12563.png"/>
+                </div>
+                <div class="profile-layout-header col-md-10"><h4>#15 Michael Crabtree</h4></div>
+                <div class="profile-layout-grade col-md-2"><span class="position-label jr-label">JR</span></div>
+                <div class="profile-layout-position col-md-12">
+                  <span>WR</span>
+                </div>
+                <div class="profile-layout-phone col-md-12">
+                  <span class="glyphicon glyphicon-phone"></span><span> 703-855-4532</span>
+                </div>
+                <div class="profile-layout-email col-md-12">
+                  <span class="glyphicon glyphicon-envelope"></span><span> crabtree@49ers.com</span>
+                </div>
+                <div class="profile-layout-video col-md-12">
+                  <span class="glyphicon glyphicon-facetime-video"></span><span>&nbsp;17&nbsp;hours&nbsp;ago</span>
+                </div>
+                <div class="profile-layout-btn col-md-12">
+                  <div class="dropdown">
+                     <button class="btn btn-default dropdown-toggle btn-block" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                    Action
+                    <span class="caret"></span>
+                    </button>   
+                       <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                        <li role="presentation" class="dropdown-header">Edit</li>
+                        <li><a href="#">Update Player Info</a></li>
+                        <li><a href="#">Delete</a></li>
+                        <li><a href="#">Deactivate</a></li>
+                        <li role="presentation" class="divider"></li>
+                        <li role="presentation" class="dropdown-header">Contact</li>
+                        <li><a href="#">Invite to hudl</a></li>
+                        <li><a href="#">Remind to watch video</a></li>
+                      </ul>
                     </div>
-                    <div class="btn-group">
-                    <button type="button" class="btn btn-default">Edit</button>
+                </div>
+        </div>
+        </div>
+      <div class="item sr 2014-2015 rb col-md-3 grid-group-item">
+          <div class="row">
+                <div class="profile-layout-img col-md-12">
+                    <img alt="Inviting athlete" src="http://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/8479.png"/>
+                </div>
+  
+                <div class="profile-layout-header col-md-10"><h4>#21 Frank Gore</h4></div>
+                <div class="profile-layout-grade col-md-2"><span class="position-label sr-label">SR</span></div>
+              
+                <div class="profile-layout-position col-md-12">
+                  <span>RB</span>
+                </div>
+                <div class="profile-layout-phone col-md-12">
+                  <span class="glyphicon glyphicon-phone"></span><span> 540-366-0442</span>
+                </div>
+                <div class="profile-layout-email col-md-12">
+                  <span class="glyphicon glyphicon-envelope"></span><span> gore@49ers.com</span>
+                </div>
+                <div class="profile-layout-video col-md-12">
+                  <span class="glyphicon glyphicon-facetime-video"></span><span>&nbsp;3&nbsp;days&nbsp;ago</span>
+                </div>
+                <div class="profile-layout-btn col-md-12">
+                  <div class="dropdown">
+                     <button class="btn btn-default dropdown-toggle btn-block" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                    Action
+                    <span class="caret"></span>
+                    </button>   
+                       <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                        <li role="presentation" class="dropdown-header">Edit</li>
+                        <li><a href="#">Update Player Info</a></li>
+                        <li><a href="#">Delete</a></li>
+                        <li><a href="#">Deactivate</a></li>
+                        <li role="presentation" class="divider"></li>
+                        <li role="presentation" class="dropdown-header">Contact</li>
+                        <li><a href="#">Invite to hudl</a></li>
+                        <li><a href="#">Remind to watch video</a></li>
+                      </ul>
                     </div>
-                    <div class="btn-group">
-                    <button type="button" class="btn btn-default">Invite</button>
+                </div>
+                      </div>
+        </div>
+        <div class="item fr 2014-2015 rb col-md-3 grid-group-item">
+          <div class="row">
+                <div class="profile-layout-img col-md-12">
+                    <img alt="Inviting athlete" src="http://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/14890.png"/>
+                </div>
+  
+                <div class="profile-layout-header col-md-10"><h4>#23 LaMichael James</h4></div>
+                <div class="profile-layout-grade col-md-2"><span class="position-label fr-label">FR</span></div>
+              
+                <div class="profile-layout-position col-md-12">
+                  <span>RB</span>
+                </div>
+                <div class="profile-layout-phone col-md-12">
+                  <span class="glyphicon glyphicon-phone"></span><span> 714-841-5707</span>
+                </div>
+                <div class="profile-layout-email col-md-12">
+                  <span class="glyphicon glyphicon-envelope"></span><span> james@49ers.com</span>
+                </div>
+                <div class="profile-layout-video col-md-12">
+                  <span class="glyphicon glyphicon-facetime-video"></span><span>&nbsp;3&nbsp;days&nbsp;ago</span>
+                </div>
+                <div class="profile-layout-btn col-md-12">
+                  <div class="dropdown">
+                     <button class="btn btn-default dropdown-toggle btn-block" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                    Action
+                    <span class="caret"></span>
+                    </button>   
+                       <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                        <li role="presentation" class="dropdown-header">Edit</li>
+                        <li><a href="#">Update Player Info</a></li>
+                        <li><a href="#">Delete</a></li>
+                        <li><a href="#">Deactivate</a></li>
+                        <li role="presentation" class="divider"></li>
+                        <li role="presentation" class="dropdown-header">Contact</li>
+                        <li><a href="#">Invite to hudl</a></li>
+                        <li><a href="#">Remind to watch video</a></li>
+                      </ul>
                     </div>
-                  </div>
-               </div>
-          </div>
-          <div class="item jr 2014-2015 qb col-md-3">
-            <img alt="Inviting athlete" width="250" src="http://a.espncdn.com/i/headshots/nfl/players/full/14001.png"/>
-              <h4>Colin Kapernick</h4>
-              <h5>QB</h5>
-              <span class="glyphicon glyphicon-phone"> (408)483-8110</span><br>
-              <span class="glyphicon glyphicon-envelope"> kapernick@49ers.com</span><br>
-              <span class="glyphicon glyphicon-facetime-video">&nbsp;3&nbsp;days&nbsp;ago</span>
-              <div id="collapseFive" class="panel-collapse collapse">
-               <div class="panel-body">
-                 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-               </div>
-             </div>
-              <div class="row player-btn">
-                 <div class="btn-group btn-group-justified">
-                    <div class="btn-group">
-                        <button id="player-view1" type="button" class="btn btn-default"><a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">View</a></button>
-                    </div>
-                    <div class="btn-group">
-                     <button type="button" class="btn btn-default">Edit</button>
-                    </div>
-                    <div class="btn-group">
-                     <button type="button" class="btn btn-default">Invite</button>
-                    </div>
-                  </div>
-               </div>
+                </div>
             </div>
+        </div>
+        <div class="item so 2014-2015 lb col-md-3 grid-group-item inactive">
+          <div class="row">
+                <div class="profile-layout-img col-md-12">
+                    <img alt="Inviting athlete" src="http://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/13262.png"/>
+                </div>
+  
+                <div class="profile-layout-header col-md-10"><h4>#53 NaVorro Bowman</h4></div>
+                <div class="profile-layout-grade col-md-2"><span class="position-label so-label">SO</span></div>
+              
+                <div class="profile-layout-position col-md-12">
+                  <span>LB</span>
+                </div>
+                <div class="profile-layout-phone col-md-12">
+                  <span class="glyphicon glyphicon-phone"></span><span> 913-683-7519</span>
+                </div>
+                <div class="profile-layout-email col-md-12">
+                  <span class="glyphicon glyphicon-envelope"></span><span> bowman@49ers.com</span>
+                </div>
+                <div class="profile-layout-video col-md-12">
+                  <span class="glyphicon glyphicon-facetime-video"></span><span>&nbsp;3&nbsp;days&nbsp;ago</span>
+                </div>
+                <div class="profile-layout-btn col-md-12">
+                  <div class="dropdown">
+                     <button class="btn btn-default dropdown-toggle btn-block" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                    Action
+                    <span class="caret"></span>
+                    </button>   
+                       <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                        <li role="presentation" class="dropdown-header">Edit</li>
+                        <li><a href="#">Update Player Info</a></li>
+                        <li><a href="#">Delete</a></li>
+                        <li><a href="#">Deactivate</a></li>
+                        <li role="presentation" class="divider"></li>
+                        <li role="presentation" class="dropdown-header">Contact</li>
+                        <li><a href="#">Invite to hudl</a></li>
+                        <li><a href="#">Remind to watch video</a></li>
+                      </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item jr 2014-2015 g col-md-3 grid-group-item inactive">
+          <div class="row">
+                <div class="profile-layout-img col-md-12">
+                    <img alt="Inviting athlete" src="http://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/13246.png"/>
+                </div>
+  
+                <div class="profile-layout-header col-md-10"><h4>#77 Mike Iupati</h4></div>
+                <div class="profile-layout-grade col-md-2"><span class="position-label jr-label">JR</span></div>
+              
+                <div class="profile-layout-position col-md-12">
+                  <span>G</span>
+                </div>
+                <div class="profile-layout-phone col-md-12">
+                  <span class="glyphicon glyphicon-phone"></span><span> 608-370-1438</span>
+                </div>
+                <div class="profile-layout-email col-md-12">
+                  <span class="glyphicon glyphicon-envelope"></span><span> iupati@49ers.com</span>
+                </div>
+                <div class="profile-layout-video col-md-12">
+                  <span class="glyphicon glyphicon-facetime-video"></span><span>&nbsp;45&nbsp;days&nbsp;ago</span>
+                </div>
+                <div class="profile-layout-btn col-md-12">
+                  <div class="dropdown">
+                     <button class="btn btn-default dropdown-toggle btn-block" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                    Action
+                    <span class="caret"></span>
+                    </button>   
+                       <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                        <li role="presentation" class="dropdown-header">Edit</li>
+                        <li><a href="#">Update Player Info</a></li>
+                        <li><a href="#">Delete</a></li>
+                        <li><a href="#">Deactivate</a></li>
+                        <li role="presentation" class="divider"></li>
+                        <li role="presentation" class="dropdown-header">Contact</li>
+                        <li><a href="#">Invite to hudl</a></li>
+                        <li><a href="#">Remind to watch video</a></li>
+                      </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item fr 2014-2015 wr col-md-3 grid-group-item">
+          <div class="row">
+                <div class="profile-layout-img col-md-12">
+                    <img alt="Inviting athlete" src="http://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/4512.png"/>
+                </div>
+  
+                <div class="profile-layout-header col-md-10"><h4>#81 Anquan Boldin</h4></div>
+                <div class="profile-layout-grade col-md-2"><span class="position-label fr-label">FR</span></div>
+              
+                <div class="profile-layout-position col-md-12">
+                  <span>WR</span>
+                </div>
+                <div class="profile-layout-phone col-md-12">
+                  <span class="glyphicon glyphicon-phone"></span><span> 530-451-1858</span>
+                </div>
+                <div class="profile-layout-email col-md-12">
+                  <span class="glyphicon glyphicon-envelope"></span><span> boldin@49ers.com</span>
+                </div>
+                <div class="profile-layout-video col-md-12">
+                  <span class="glyphicon glyphicon-facetime-video"></span><span>&nbsp;2&nbsp;days&nbsp;ago</span>
+                </div>
+                <div class="profile-layout-btn col-md-12">
+                  <div class="dropdown">
+                     <button class="btn btn-default dropdown-toggle btn-block" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                    Action
+                    <span class="caret"></span>
+                    </button>   
+                       <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                        <li role="presentation" class="dropdown-header">Edit</li>
+                        <li><a href="#">Update Player Info</a></li>
+                        <li><a href="#">Delete</a></li>
+                        <li><a href="#">Deactivate</a></li>
+                        <li role="presentation" class="divider"></li>
+                        <li role="presentation" class="dropdown-header">Contact</li>
+                        <li><a href="#">Invite to hudl</a></li>
+                        <li><a href="#">Remind to watch video</a></li>
+                      </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item jr 2014-2015 te dt col-md-3 grid-group-item inactive">
+          <div class="row">
+                <div class="profile-layout-img col-md-12">
+                    <img alt="Inviting athlete" src="http://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/14377.png"/>
+                </div>
+  
+                <div class="profile-layout-header col-md-10"><h4>#83 Demarcus Dobbs</h4></div>
+                <div class="profile-layout-grade col-md-2"><span class="position-label jr-label">JR</span></div>
+              
+                <div class="profile-layout-position col-md-12">
+                  <span>TE/DT</span>
+                </div>
+                <div class="profile-layout-phone col-md-12">
+                  <span class="glyphicon glyphicon-phone"></span><span> 509-323-5206</span>
+                </div>
+                <div class="profile-layout-email col-md-12">
+                  <span class="glyphicon glyphicon-envelope"></span><span> dobbs@49ers.com</span>
+                </div>
+                <div class="profile-layout-video col-md-12">
+                  <span class="glyphicon glyphicon-facetime-video"></span><span>&nbsp;2&nbsp;days&nbsp;ago</span>
+                </div>
+                <div class="profile-layout-btn col-md-12">
+                  <div class="dropdown">
+                     <button class="btn btn-default dropdown-toggle btn-block" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                    Action
+                    <span class="caret"></span>
+                    </button>   
+                       <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                        <li role="presentation" class="dropdown-header">Edit</li>
+                        <li><a href="#">Update Player Info</a></li>
+                        <li><a href="#">Delete</a></li>
+                        <li><a href="#">Deactivate</a></li>
+                        <li role="presentation" class="divider"></li>
+                        <li role="presentation" class="dropdown-header">Contact</li>
+                        <li><a href="#">Invite to hudl</a></li>
+                        <li><a href="#">Remind to watch video</a></li>
+                      </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
       </div>
 
     </div> <!-- /container -->

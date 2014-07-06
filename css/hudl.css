@@ -13,12 +13,30 @@ body{
   font-family: 'TradeGothicLTPro-BdCn18'; 
 }
 
-h4, h5, p, a, button, span, label{
+h4, h5, p, a, button, span, label, .dropdown-header{
   font-family: 'TradeGothicLTPro-Cn18';
+}
+
+input{
+  font-family: sans-serif;
+}
+
+h4 span{
+  float: right;
 }
 
 h1 span{
   font-size: 25px;
+}
+
+span{
+  font-size: 15px;
+}
+
+h4{
+  font-size: 20px;
+  margin-bottom: 0px;
+
 }
 
 h1{
@@ -115,7 +133,7 @@ ul{
    background-color: #eee;
 }
 
-.player-btn .btn-group{
+.grid-group-item .player-btn .btn-group{
    margin: 10px 0;
 }
 
@@ -127,14 +145,18 @@ label{
   color: #000;
 }
 
+img{
+  width: 100%;
+}
+
 .grade-dropdown button{
   display:block;
 }
 
 .search-bar{
-   background-color: #EEE;
-   padding: 20px 20px;
-   margin: 10px 0px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 h1{
@@ -193,6 +215,88 @@ h1{
    margin-left: 0px;
 }
 
-.panel-body{
-   padding: 0px;
+#grid.btn-default:hover, #grid.btn-default, #list.btn-default:hover, #list.btn-default{
+  color: #fff;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.btn-default{
+  background-color: #eee;
+  border-color: #ccc;
+}
+
+.player-layout-btn .col-md-3{
+  float:right;
+}
+
+.submit-btn-grp{
+  margin-top:  15px;
+}
+
+.panel-default > .panel-heading{
+  background-color: #f88336;
+  color: #fff;
+}
+
+
+.panel-default > .panel-heading + .panel-collapse > .panel-body {
+  background-color: #eee;
+}
+
+.nav-label{
+  margin-top: 15px;
+  color: #fff;
+  font-weight: normal;
+}
+
+.checkbox label{
+  color: #fff;
+}
+
+.list-group-item .profile-layout-grade, 
+.list-group-item .profile-layout-position, 
+.list-group-item .profile-layout-phone, 
+.list-group-item .profile-layout-email, 
+.list-group-item .profile-layout-video{
+  line-height: 42px;
+}
+
+.list-group-item .profile-layout-btn{
+  margin-top: 5px;
+}
+
+.position-label{
+  background-color: transparent;
+  padding: 5px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.jr-label{
+  color: purple;
+}
+
+.fr-label{
+  color: blue;
+}
+
+.so-label{
+  color: orange;
+}
+
+.sr-label{
+  color: red;
+}
+
+.grid-group-item .jr-label{
+  display:inline-block;
+}
+
+.name-container{
+  background-color: #f88336;
+}
+
+.roster-header input{
+  margin-top:8px;
 }

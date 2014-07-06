@@ -77,8 +77,26 @@ $(document).ready(function() {
    
   $('#list').click(function(event){
       event.preventDefault();
+      $('#roster .item').removeClass('grid-group-item');
       $('#roster .item').addClass('list-group-item');
       $('#roster .collapse').addClass('in');
+      $('#roster .profile-layout-img').removeClass('col-md-12');
+      $('#roster .profile-layout-img').addClass('col-md-1');
+      $('#roster .profile-layout-header').removeClass('col-md-12');
+      $('#roster .profile-layout-header').addClass('col-md-2');
+      $('#roster .profile-layout-grade').removeClass('col-md-6');
+      $('#roster .profile-layout-grade').addClass('col-md-1');
+      $('#roster .profile-layout-position').removeClass('col-md-6');
+      $('#roster .profile-layout-position').addClass('col-md-1');
+      $('#roster .profile-layout-phone').removeClass('col-md-12');
+      $('#roster .profile-layout-phone').addClass('col-md-2');
+      $('#roster .profile-layout-email').removeClass('col-md-12');
+      $('#roster .profile-layout-email').addClass('col-md-2');
+      $('#roster .profile-layout-video').removeClass('col-md-12');
+      $('#roster .profile-layout-video').addClass('col-md-2');
+      $('#roster .profile-layout-btn').removeClass('col-md-12');
+      $('#roster .profile-layout-btn').addClass('col-md-1');
+      $('#roster .player-btn').removeClass('btn-group-justified');
    });
     
   $('#grid').click(function(event){
@@ -86,6 +104,71 @@ $(document).ready(function() {
       $('#roster .item').removeClass('list-group-item');
       $('#roster .item').addClass('grid-group-item');
       $('#roster .collapse').removeClass('in');
+      $('#roster .profile-layout-img').removeClass('col-md-1');
+      $('#roster .profile-layout-img').addClass('col-md-12');
+      $('#roster .profile-layout-header').removeClass('col-md-2');
+      $('#roster .profile-layout-header').addClass('col-md-12');
+      $('#roster .profile-layout-grade').removeClass('col-md-1');
+      $('#roster .profile-layout-grade').addClass('col-md-6');
+      $('#roster .profile-layout-position').removeClass('col-md-1');
+      $('#roster .profile-layout-position').addClass('col-md-6');
+      $('#roster .profile-layout-phone').removeClass('col-md-2');
+      $('#roster .profile-layout-phone').addClass('col-md-12');
+      $('#roster .profile-layout-email').removeClass('col-md-2');
+      $('#roster .profile-layout-email').addClass('col-md-12');
+      $('#roster .profile-layout-video').removeClass('col-md-2');
+      $('#roster .profile-layout-video').addClass('col-md-12');
+      $('#roster .profile-layout-btn').removeClass('col-md-1');
+      $('#roster .profile-layout-btn').addClass('col-md-12');
+      $('#roster .player-btn').addClass('btn-group-justified');
    });
+
+  $('#gen-info').click(function(event){
+    event.preventDefault();
+    var classList = $('#add-athlete .info-sec-icon').attr('class').split(/\s+/);
+    for (var i = 0; i < classList.length; i++) {
+       if (classList[i] === 'glyphicon-plus-sign') {
+         $('#add-athlete .info-sec-icon').removeClass('glyphicon-plus-sign');
+         $('#add-athlete .info-sec-icon').addClass('glyphicon-minus-sign');
+       }
+       else{
+         $('#add-athlete .info-sec-icon').removeClass('glyphicon-minus-sign');
+         $('#add-athlete .info-sec-icon').addClass('glyphicon-plus-sign');
+       }
+    }
+      
+  });
+
+  $('#contact-info').click(function(event){
+    event.preventDefault();
+    var classList = $('#add-athlete .contact-info-icon').attr('class').split(/\s+/);
+    for (var i = 0; i < classList.length; i++) {
+       if (classList[i] === 'glyphicon-plus-sign') {
+         $('#add-athlete .contact-info-icon').removeClass('glyphicon-plus-sign');
+         $('#add-athlete .contact-info-icon').addClass('glyphicon-minus-sign');
+       }
+       else{
+         $('#add-athlete .contact-info-icon').removeClass('glyphicon-minus-sign');
+         $('#add-athlete .contact-info-icon').addClass('glyphicon-plus-sign');
+       }
+    }
+      
+  });
+
+  $('#parent-info').click(function(event){
+    event.preventDefault();
+    var classList = $('#add-athlete .parent-info-icon').attr('class').split(/\s+/);
+    for (var i = 0; i < classList.length; i++) {
+       if (classList[i] === 'glyphicon-plus-sign') {
+         $('#add-athlete .parent-info-icon').removeClass('glyphicon-plus-sign');
+         $('#add-athlete .parent-info-icon').addClass('glyphicon-minus-sign');
+       }
+       else{
+         $('#add-athlete .parent-info-icon').removeClass('glyphicon-minus-sign');
+         $('#add-athlete .parent-info-icon').addClass('glyphicon-plus-sign');
+       }
+    }
+      
+  });
     
 });
