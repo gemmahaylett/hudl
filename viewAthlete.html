@@ -77,15 +77,15 @@
               <form role="form">
                 <div class="form-group col-md-6">
                   <label for="firstName">First Name*</label>
-                  <input type="email" class="form-control" id="firstName" placeholder="Colin">
+                  <input type="text" class="form-control" id="firstName" placeholder="Colin">
                 </div>
                 <div class="form-group col-md-6">
                   <label for="lastName">Last Name*</label>
-                  <input type="password" class="form-control" id="lastName" placeholder="Kaepernick">
+                  <input type="text" class="form-control" id="lastName" placeholder="Kaepernick">
                 </div>
                 <div class="form-group col-md-1">
                   <label for="jerseyNum">Jersey #</label>
-                  <input type="email" class="form-control" id="jerseyNum" placeholder="7">
+                  <input type="text" class="form-control" id="jerseyNum" placeholder="7">
                 </div>
                 <div class="form-group col-md-1">
                   <div class="grade-dropdown">
@@ -134,15 +134,15 @@
                 </div>
                 <div class="form-group col-md-1">
                   <label for="heightFeet">FT</label>
-                  <input type="email" class="form-control" id="heightFeet" placeholder="6">
+                  <input type="text" class="form-control" id="heightFeet" placeholder="6">
                 </div>
                 <div class="form-group col-md-1">
                   <label for="heightIn">IN</label>
-                  <input type="email" class="form-control" id="heightIn" placeholder="4">
+                  <input type="text" class="form-control" id="heightIn" placeholder="4">
                 </div>
                 <div class="form-group col-md-1">
                   <label for="weigth">Weight</label>
-                  <input type="email" class="form-control" id="weigth" placeholder="230">
+                  <input type="text" class="form-control" id="weigth" placeholder="230">
                 </div>
               </form>
           </div> <!-- panel-body end -->
@@ -164,11 +164,11 @@
               <form role="form">
                 <div class="form-group col-md-4">
                   <label for="cellPhone">Cell Phone</label>
-                  <input type="email" class="form-control" id="cellPhone" placeholder="360-432-2554">
+                  <input type="text" class="form-control" id="cellPhone" placeholder="360-432-2554">
                 </div>
                 <div class="form-group col-md-2">
-                  <div class="grade-dropdown">
-                    <label for="grade">Cell Carrier</label>
+                  <div class="cell-dropdown">
+                    <label for="cellCarrier">Cell Carrier</label>
                     <button class="btn btn-default dropdown-toggle btn-block" type="button" id="cellCarrier" data-toggle="dropdown">
                       Alltel
                     </button>
@@ -182,27 +182,27 @@
                 </div>
                 <div class="form-group col-md-4">
                   <label for="homePhone">Home Phone</label>
-                  <input type="email" class="form-control" id="homePhone" placeholder="202-555-0190">
+                  <input type="text" class="form-control" id="homePhone" placeholder="202-555-0190">
                 </div>
                 <div class="form-group col-md-6">
                   <label for="address">Address</label>
-                  <input type="password" class="form-control" id="address" placeholder="1987 Boone Crockett Lane">
+                  <input type="text" class="form-control" id="address" placeholder="1987 Boone Crockett Lane">
                 </div>
                 <div class="form-group col-md-6">
                   <label for="address2">Suite #, Apt#, etc.</label>
-                  <input type="email" class="form-control" id="address2">
+                  <input type="text" class="form-control" id="address2">
                 </div>
                 <div class="form-group col-md-1">
                   <label for="city">City</label>
-                  <input type="email" class="form-control" id="city" placeholder="Shelton">
+                  <input type="text" class="form-control" id="city" placeholder="Shelton">
                 </div>
                 <div class="form-group col-md-1">
                   <label for="state">State</label>
-                  <input type="email" class="form-control" id="state" placeholder="WA">
+                  <input type="text" class="form-control" id="state" placeholder="WA">
                 </div>
                 <div class="form-group col-md-2">
                   <label for="zip">Zip Code</label>
-                  <input type="email" class="form-control" id="zip" placeholder="98584">
+                  <input type="text" class="form-control" id="zip" placeholder="98584">
                 </div>
                 <div class="form-group col-md-6 col-md-offset-2">
                   <label for="email">Email</label>
@@ -228,26 +228,46 @@
               <form role="form">
                 <div class="form-group col-md-6">
                   <label for="firstName">Parent/Guardian #1 Name</label>
-                  <input type="email" class="form-control" id="parentName1" placeholder="Teresa Kaepernick">
+                  <input type="text" class="form-control" id="parentName1" placeholder="Teresa Kaepernick">
                 </div>
                 <div class="form-group col-md-6">
                   <label for="firstName">Parent/Guardian #2 Name</label>
-                  <input type="email" class="form-control" id="parentName2" placeholder="Rick Kaepernick">
+                  <input type="text" class="form-control" id="parentName2" placeholder="Rick Kaepernick">
                 </div>
                 <div class="form-group col-md-4">
                   <label for="firstName">Cell Phone #1</label>
-                  <input type="email" class="form-control" id="parentCell1" placeholder="202-555-0108">
+                  <input type="text" class="form-control" id="parentCell1" placeholder="202-555-0108">
                 </div>
                 <div class="form-group col-md-4 col-md-offset-2">
                   <label for="firstName">Cell Phone #2</label>
-                  <input type="email" class="form-control" id="parentCell2" placeholder="202-555-0132">
+                  <input type="text" class="form-control" id="parentCell2" placeholder="202-555-0132">
                 </div>
               </form>
             </div>
           </div>
-        </div>
-          
+        </div>       
       </div>
+
+      <div class="panel-group" id="addInfoAccordion">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">
+              <a id="parent-info" data-toggle="collapse" data-parent="#addInfoAccordion" href="#addInfoCollapse">
+                <span class="parent-info-icon glyphicon glyphicon-minus-sign"></span> Additional Information
+              </a>
+            </h3>
+          </div>
+          <div id="addInfoCollapse" class="panel-collapse collapse in">
+            <div class="panel-body">
+              <form role="form">
+                <label for="addInfo">Additional Notes</label>
+                <textarea class="form-control" rows="3"></textarea>
+              </form>
+            </div>
+          </div>
+        </div>       
+      </div>
+
       <form class="submit-btn-grp">
           <div class="row">
               <a href="manageRoster.html" class="btn btn-primary">Save Athlete</a>

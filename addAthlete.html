@@ -79,15 +79,15 @@
               <form role="form">
                 <div class="form-group col-md-6">
                   <label for="firstName">First Name*</label>
-                  <input type="email" class="form-control" id="firstName">
+                  <input type="text" class="form-control" id="firstName">
                 </div>
                 <div class="form-group col-md-6">
                   <label for="lastName">Last Name*</label>
-                  <input type="password" class="form-control" id="lastName">
+                  <input type="text" class="form-control" id="lastName">
                 </div>
                 <div class="form-group col-md-1">
                   <label for="jerseyNum">Jersey #</label>
-                  <input type="email" class="form-control" id="jerseyNum">
+                  <input type="text" class="form-control" id="jerseyNum">
                 </div>
                 <div class="form-group col-md-1">
                   <div class="grade-dropdown">
@@ -136,15 +136,15 @@
                 </div>
                 <div class="form-group col-md-1">
                   <label for="heightFeet">FT</label>
-                  <input type="email" class="form-control" id="heightFeet">
+                  <input type="text" class="form-control" id="heightFeet">
                 </div>
                 <div class="form-group col-md-1">
                   <label for="heightIn">IN</label>
-                  <input type="email" class="form-control" id="heightIn">
+                  <input type="text" class="form-control" id="heightIn">
                 </div>
                 <div class="form-group col-md-1">
                   <label for="weigth">Weight</label>
-                  <input type="email" class="form-control" id="weigth">
+                  <input type="text" class="form-control" id="weigth">
                 </div>
               </form>
           </div> <!-- panel-body end -->
@@ -166,7 +166,7 @@
               <form role="form">
                 <div class="form-group col-md-4">
                   <label for="cellPhone">Cell Phone</label>
-                  <input type="email" class="form-control" id="cellPhone">
+                  <input type="text" class="form-control" id="cellPhone">
                 </div>
                 <div class="form-group col-md-2">
                   <div class="grade-dropdown">
@@ -185,27 +185,27 @@
                 </div>
                 <div class="form-group col-md-4">
                   <label for="homePhone">Home Phone</label>
-                  <input type="email" class="form-control" id="homePhone">
+                  <input type="text" class="form-control" id="homePhone">
                 </div>
                 <div class="form-group col-md-6">
                   <label for="address">Address</label>
-                  <input type="password" class="form-control" id="address">
+                  <input type="text" class="form-control" id="address">
                 </div>
                 <div class="form-group col-md-6">
                   <label for="address2">Suite #, Apt#, etc.</label>
-                  <input type="email" class="form-control" id="address2">
+                  <input type="text" class="form-control" id="address2">
                 </div>
                 <div class="form-group col-md-1">
                   <label for="city">City</label>
-                  <input type="email" class="form-control" id="city">
+                  <input type="text" class="form-control" id="city">
                 </div>
                 <div class="form-group col-md-1">
                   <label for="state">State</label>
-                  <input type="email" class="form-control" id="state">
+                  <input type="text" class="form-control" id="state">
                 </div>
                 <div class="form-group col-md-2">
                   <label for="zip">Zip Code</label>
-                  <input type="email" class="form-control" id="zip">
+                  <input type="text" class="form-control" id="zip">
                 </div>
                 <div class="form-group col-md-6 col-md-offset-2">
                   <label for="email">Email</label>
@@ -248,9 +248,29 @@
               </form>
             </div>
           </div>
-        </div>
-          
+        </div>   
       </div>
+
+      <div class="panel-group" id="addInfoAccordion">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">
+              <a id="parent-info" data-toggle="collapse" data-parent="#addInfoAccordion" href="#addInfoCollapse">
+                <span class="parent-info-icon glyphicon glyphicon-plus-sign"></span> Additional Information
+              </a>
+            </h3>
+          </div>
+          <div id="addInfoCollapse" class="panel-collapse collapse">
+            <div class="panel-body">
+              <form role="form">
+                <label for="addInfo">Additional Notes</label>
+                <textarea class="form-control" rows="3" placeholder="Enter anything you want to remember about this athlete (equipment number, locker, sibling names)"></textarea>
+              </form>
+            </div>
+          </div>
+        </div>       
+      </div>
+
       <form class="submit-btn-grp">
           <div class="row">
               <a href="manageRoster.html" class="btn btn-primary" >Save Athlete</a>
