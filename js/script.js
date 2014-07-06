@@ -170,5 +170,21 @@ $(document).ready(function() {
     }
       
   });
+
+  $('#additional-info').click(function(event){
+    event.preventDefault();
+    var classList = $('#add-athlete .additional-icon').attr('class').split(/\s+/);
+    for (var i = 0; i < classList.length; i++) {
+       if (classList[i] === 'glyphicon-plus-sign') {
+         $('#add-athlete .additional-icon').removeClass('glyphicon-plus-sign');
+         $('#add-athlete .additional-icon').addClass('glyphicon-minus-sign');
+       }
+       else{
+         $('#add-athlete .additional-icon').removeClass('glyphicon-minus-sign');
+         $('#add-athlete .additional-icon').addClass('glyphicon-plus-sign');
+       }
+    }
+      
+  });
     
 });
