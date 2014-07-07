@@ -18,11 +18,11 @@ h4, h5, a, button, span, label, .dropdown-header{
 }
 
 .navbar a, .navbar label{
-  font-family: sans-serif;
+  font-family: 'HelveticaNeueLT-Medium';
 }
 
-input, p, textarea{
-  font-family: sans-serif;
+input, p, textarea, .popover-content{
+  font-family: 'HelveticaNeueLTStd-Roman';
 }
 
 h4 span{
@@ -293,14 +293,19 @@ h1{
   color: red;
 }
 
-.grid-group-item .jr-label{
-  display:inline-block;
-}
-
 .name-container{
   background-color: #f88336;
 }
 
 .roster-header input{
   margin-top:8px;
+}
+
+.popover{
+  background-color: #000;
+  color: #FFF;
+}
+
+.popover.bottom > .arrow:after {
+  border-bottom-color: #000;
 }

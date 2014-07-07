@@ -186,5 +186,7 @@ $(document).ready(function() {
     }
       
   });
+
+  $('#import-roster').popover('show');
     
 });
