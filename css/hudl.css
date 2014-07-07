@@ -11,6 +11,7 @@
 
 body{
   font-family: 'TradeGothicLTPro-BdCn18'; 
+  background-color: #F8F8F8;
 }
 
 h4, h5, a, button, span, label, .dropdown-header{
@@ -277,20 +278,40 @@ h1{
   font-size: 18px;
 }
 
+.grid-group-item .fr-label,
+.grid-group-item .so-label,
+.grid-group-item .jr-label,
+.grid-group-item .sr-label{
+  top: 10px;
+}
+
 .jr-label{
-  color: purple;
+  color: #fff;
+  background-color: purple;
+  border-radius: 6px;
+  position:relative;
+
 }
 
 .fr-label{
-  color: blue;
+  color: #FFF;
+  background-color: blue;
+  border-radius: 6px;
+  position:relative;
 }
 
 .so-label{
-  color: orange;
+  color: #fff;
+  background-color: orange;
+  border-radius: 6px;
+  position:relative;
 }
 
 .sr-label{
-  color: red;
+  color: #fff;
+  background-color: red;
+  border-radius: 6px;
+  position:relative;
 }
 
 .name-container{
@@ -302,10 +323,24 @@ h1{
 }
 
 .popover{
-  background-color: #000;
+  background-color: #6aa220;
   color: #FFF;
 }
 
 .popover.bottom > .arrow:after {
-  border-bottom-color: #000;
+  border-bottom-color: #6aa220;
+}
+
+.item {
+  margin-bottom: 50px;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+  padding: 2em 1em;
+  margin: 1em 1em;
+  width: 22.5%;
+  border-radius: 4px;
+}
+
+.search-bar input{
+  width: 400px;
 }
