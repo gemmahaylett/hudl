@@ -28,7 +28,7 @@
 @import url("//hello.myfonts.net/count/2b5a46");
 
   
-@font-face {font-family: 'TradeGothicLTPro-Cn18';src: url('webfonts/2B5010_0_0.eot');src: url('webfonts/2B5010_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2B5010_0_0.woff') format('woff'),url('webfonts/2B5010_0_0.ttf') format('truetype');}
-@font-face {font-family: 'TradeGothicLTPro-BdCn20';src: url('webfonts/2B5010_1_0.eot');src: url('webfonts/2B5010_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2B5010_1_0.woff') format('woff'),url('webfonts/2B5010_1_0.ttf') format('truetype');}
-@font-face {font-family: 'HelveticaNeueLTStd-Roman';src: url('webfonts/2B5A46_0_0.eot');src: url('webfonts/2B5A46_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2B5A46_0_0.woff') format('woff'),url('webfonts/2B5A46_0_0.ttf') format('truetype');}
-@font-face {font-family: 'HelveticaNeueLT-Medium';src: url('webfonts/2B5A46_1_0.eot');src: url('webfonts/2B5A46_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2B5A46_1_0.woff') format('woff'),url('webfonts/2B5A46_1_0.ttf') format('truetype');}
+@font-face {font-family: 'TradeGothicLTPro-Cn18';src: url('../fonts/2B5010_0_0.eot');src: url('../fonts/2B5010_0_0.eot?#iefix') format('embedded-opentype'),url('..fonts/2B5010_0_0.woff') format('woff'),url('../webfonts/2B5010_0_0.ttf') format('truetype');}
+@font-face {font-family: 'TradeGothicLTPro-BdCn20';src: url('../fonts/2B5010_1_0.eot');src: url('../fonts/2B5010_1_0.eot?#iefix') format('embedded-opentype'),url('../fonts/2B5010_1_0.woff') format('woff'),url('../webfonts/2B5010_1_0.ttf') format('truetype');}
+@font-face {font-family: 'HelveticaNeueLTStd-Roman';src: url('../fonts/2B5A46_0_0.eot');src: url('../fonts/2B5A46_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/2B5A46_0_0.woff') format('woff'),url('../webfonts/2B5A46_0_0.ttf') format('truetype');}
+@font-face {font-family: 'HelveticaNeueLT-Medium';src: url('../fonts/2B5A46_1_0.eot');src: url('../fonts/2B5A46_1_0.eot?#iefix') format('embedded-opentype'),url('../fonts/2B5A46_1_0.woff') format('woff'),url('../webfonts/2B5A46_1_0.ttf') format('truetype');}
