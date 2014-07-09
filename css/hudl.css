@@ -1,149 +1,55 @@
-.TradeGothicLTPro-Cn18 { 
-  font-family: TradeGothicLTPro-Cn18;
-  font-weight: normal;
-  font-style: normal;
-}
-.TradeGothicLTPro-BdCn20 { 
-  font-family: TradeGothicLTPro-BdCn20;
-  font-weight: normal;
-  font-style: normal;
-}
+/**
+ * Table of Contents:
+ *
+ * 1.0 - General Styles
+ * 2.0 Header Styles
+ * 3.0 Navigation Styles
+ * 4.0 Links + Button Styles
+ * 5.0 Manage Roster Styles
+ *   5.1 - Roster Header 
+ *   5.2 - Search Bar
+ *   5.3 - Filter Nav Bar 
+ *   5.4 - View/Grid Buttons
+ *   5.5 - Player Profiles
+ *   5.6 - Grid Styles
+ *   5.7 - List Styles
+ * 6.0 Add and View Athlete Styles
+ *   6.1 - Form Styles
+ *   6.2 - Collapsable/Expandable headers
+ * --------------------------------------------------------------------------------------------
+ */
 
+/*-----------------------------------------------------------------------------------*/
+/*  1.0 General Styles
+/*-----------------------------------------------------------------------------------*/
 body{
   font-family: 'TradeGothicLTPro-BdCn18'; 
   background-color: #F8F8F8;
 }
 
-h4, h5, a, button, span, label, .dropdown-header{
+h4,
+h5,
+a,
+button,
+span,
+label,
+.dropdown-header{
   font-family: 'TradeGothicLTPro-Cn18';
-}
-
-.navbar a, .navbar label{
-  font-family: 'HelveticaNeueLT-Medium';
-}
-
-input, p, textarea, .popover-content{
-  font-family: 'HelveticaNeueLTStd-Roman';
-}
-
-h4 span{
-  float: right;
-}
-
-h1 span{
-  font-size: 25px;
-}
-
-span{
-  font-size: 15px;
-}
-
-h4{
-  font-size: 20px;
-  margin-bottom: 0px;
-
-}
-
-h1{
-  font-family: 'TradeGothicLTPro-BdCn20';
-}
-
-.background-container{
-  background-color: #EEE;
-  padding-right: 60px;
-  padding-left: 60px;
-}
-
-.roster-header{
-  margin-top: 10px;
-  margin-bottom: 10px;
-  position: relative;
-}
-
-.add-btn-group{
-  margin-top: 20px;
-}
-
-.search-athletes{
-  padding-top: 15px;
-  paddint-bottom: 15px;
-}
-
-.form-group{
-  margin-bottom: 0px;
-  padding-top: 8px;
-  color: #FFF;
-}
-
-.checkbox{
-  padding: 5px;
-  color: #FFF;
-}
-
-.player-info, .player-stats{
-  display: inline-block;
 }
 
 ul{
   list-style-type: none;
 }
 
-.player-stats {
-  color: #FFF;
-  vertical-align: middle;
+input, 
+p, 
+textarea, 
+.popover-content{
+  font-family: 'HelveticaNeueLTStd-Roman';
 }
 
-.player-stats  p{
-  padding: 1px 28px;
-  font-size: 45px;
-  font-family: ;
-  font-family:'bebas_neueregular';
-}
-
-.player-stats.sr{
-  background-color: #FF6600;
-}
-
-.player-stats.jr{
-  background-color: #4646B4;
-}
-
-.player-stats.so{
-  background-color: #46B446;
-}
-
-.player-stats.fr{
-  background-color: #6B6B6B;
-}
-
-.header-detail, .roster-btngrp{
-  display: inline-block;
-}
-
-.roster-btngrp{
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-.roster li{
-  background-color: #eee;
-}
-
-.item{
-   margin-bottom: 50px;
-}
-
-.player-btn .btn{
-   background-color: #eee;
-}
-
-.grid-group-item .player-btn .btn-group{
-   margin: 10px 0;
-}
-
-.player-detail{
-   display:none;
+span{
+  font-size: 15px;
 }
 
 label{
@@ -154,77 +60,55 @@ img{
   width: 100%;
 }
 
-.grade-dropdown button{
-  display:block;
+.row{
+  margin-right: 0px;
+  margin-left: 0px;
 }
 
-.search-bar{
-  position: absolute;
-  bottom: 0;
-  right: 0;
+
+/*-----------------------------------------------------------------------------------*/
+/*  2.0 Header Styles
+/*-----------------------------------------------------------------------------------*/
+
+h4{
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+
+h4 span{
+  float: right;
 }
 
 h1{
-   margin-top: 0px;
+  font-family: 'TradeGothicLTPro-BdCn20';
+  margin-top: 0px;
 }
 
-.item.list-group-item
-{
-    float: none;
-    width: 100%;
-    background-color: #fff;
-    margin-bottom: 10px;
-}
-.item.list-group-item .list-group-image
-{
-    margin-right: 10px;
-}
-.item.list-group-item .thumbnail
-{
-    margin-bottom: 0px;
-}
-.item.list-group-item .caption
-{
-    padding: 9px 9px 0px 9px;
-}
-.item.list-group-item:nth-of-type(odd)
-{
-    background: #eeeeee;
+h1 span{
+  font-size: 25px;
 }
 
-.item.list-group-item:before, .item.list-group-item:after
-{
-    display: table;
-    content: " ";
+/*-----------------------------------------------------------------------------------*/
+/*  3.0 Navigation Styles
+/*-----------------------------------------------------------------------------------*/
+
+.navbar a,
+.navbar label{
+  font-family: 'HelveticaNeueLT-Medium';
 }
 
-.item.list-group-item img
-{
-    float: left;
-}
-.item.list-group-item:after
-{
-    clear: both;
-}
-.list-group-item-text
-{
-    margin: 0 0 11px;
-}
+/*-----------------------------------------------------------------------------------*/
+/*  4.0 Links + Button Styles
+/*-----------------------------------------------------------------------------------*/
 
-.player-view{
-   margin-top: 10px;
-}
-
-.row{
-   margin-right: 0px;
-   margin-left: 0px;
-}
-
-#grid.btn-default:hover, #grid.btn-default, #list.btn-default:hover, #list.btn-default{
+#grid.btn-default:hover, 
+#grid.btn-default, 
+#list.btn-default:hover, 
+#list.btn-default{
   color: #fff;
   background-color: transparent;
   border-color: transparent;
-}
+} 
 
 .btn-default{
   background-color: #eee;
@@ -239,14 +123,55 @@ h1{
   margin-top:  15px;
 }
 
-.panel-default > .panel-heading{
-  background-color: #f88336;
-  color: #fff;
+/*-----------------------------------------------------------------------------------*/
+/*  5.0 Manage Roster Styles
+/*-----------------------------------------------------------------------------------*/
+
+/* Roster Header */
+
+.roster-header{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  position: relative;
 }
 
+.add-btn-group{
+  margin-top: 20px;
+}
 
-.panel-default > .panel-heading + .panel-collapse > .panel-body {
+.header-detail, 
+.roster-btngrp{
+  display: inline-block;
+}
+
+.roster-btngrp{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.roster li{
   background-color: #eee;
+}
+
+/* Search Bar */
+
+.search-bar input{
+  width: 400px;
+  margin-top:8px;
+}
+
+.search-bar{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/* Filter Nav Bar */
+
+.checkbox{
+  padding: 5px;
+  color: #FFF;
 }
 
 .nav-label{
@@ -257,6 +182,134 @@ h1{
 
 .checkbox label{
   color: #fff;
+}
+
+/* View/Grid Buttons */
+
+.player-view{
+   margin-top: 10px;
+}
+
+/* Player Profiles */
+
+.player-info, 
+.player-stats{
+  display: inline-block;
+}
+
+.player-stats {
+  color: #FFF;
+  vertical-align: middle;
+}
+
+.player-stats p{
+  padding: 1px 28px;
+  font-size: 45px;
+  font-family:'HelveticaNeueLTStd-Roman';
+}
+
+.item {
+  margin-bottom: 50px;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+  padding: 2em 1em;
+  margin: 1em 1em;
+  width: 22.5%;
+  border-radius: 4px;
+}
+
+.player-btn .btn{
+   background-color: #eee;
+}
+
+.grade-label{
+  padding: 5px;
+  font-weight: bold;
+  font-size: 18px;
+  color: #fff;
+  border-radius: 6px;
+  position:relative;
+}
+
+.jr-label{
+  background-color: #4646B4;
+}
+
+.fr-label{
+  background-color: #6B6B6B;
+}
+
+.so-label{
+  background-color: #46B446;
+}
+
+.sr-label{
+  background-color: #FF6600;
+}
+
+/* Grid Styles */
+
+.grid-group-item .player-btn .btn-group{
+   margin: 10px 0;
+}
+
+.grid-group-item .fr-label,
+.grid-group-item .so-label,
+.grid-group-item .jr-label,
+.grid-group-item .sr-label{
+  top: 10px;
+}
+
+
+/* List Styles */
+
+.item.list-group-item
+{
+  float: none;
+  width: 100%;
+  background-color: #fff;
+  margin-bottom: 10px;
+}
+
+.item.list-group-item .list-group-image
+{
+  margin-right: 10px;
+}
+
+.item.list-group-item .thumbnail
+{
+  margin-bottom: 0px;
+}
+
+.item.list-group-item .caption
+{
+  padding: 9px 9px 0px 9px;
+}
+
+.item.list-group-item:nth-of-type(odd)
+{
+  background: #eeeeee;
+}
+
+.item.list-group-item:before, 
+.item.list-group-item:after
+{
+  display: table;
+  content: " ";
+}
+
+.item.list-group-item img
+{
+  float: left;
+}
+.item.list-group-item:after
+{
+  clear: both;
+}
+
+.list-group-item-text
+{
+  margin: 0px 0px 11px;
 }
 
 .list-group-item .profile-layout-grade, 
@@ -271,76 +324,29 @@ h1{
   margin-top: 5px;
 }
 
-.position-label{
-  background-color: transparent;
-  padding: 5px;
-  font-weight: bold;
-  font-size: 18px;
-}
+/*-----------------------------------------------------------------------------------*/
+/*  6.0 Add and View Athlete Styles
+/*-----------------------------------------------------------------------------------*/
 
-.grid-group-item .fr-label,
-.grid-group-item .so-label,
-.grid-group-item .jr-label,
-.grid-group-item .sr-label{
-  top: 10px;
-}
+/* Form Styles */
 
-.jr-label{
-  color: #fff;
-  background-color: purple;
-  border-radius: 6px;
-  position:relative;
-
-}
-
-.fr-label{
+.form-group{
+  margin-bottom: 0px;
+  padding-top: 8px;
   color: #FFF;
-  background-color: blue;
-  border-radius: 6px;
-  position:relative;
 }
 
-.so-label{
-  color: #fff;
-  background-color: orange;
-  border-radius: 6px;
-  position:relative;
+.grade-dropdown button{
+  display:block;
 }
 
-.sr-label{
-  color: #fff;
-  background-color: red;
-  border-radius: 6px;
-  position:relative;
-}
+/* Collapsable/Expandable headers */
 
-.name-container{
+.panel-default > .panel-heading{
   background-color: #f88336;
+  color: #fff;
 }
 
-.roster-header input{
-  margin-top:8px;
-}
-
-.popover{
-  background-color: #6aa220;
-  color: #FFF;
-}
-
-.popover.bottom > .arrow:after {
-  border-bottom-color: #6aa220;
-}
-
-.item {
-  margin-bottom: 50px;
-  background: #fff;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.4);
-  padding: 2em 1em;
-  margin: 1em 1em;
-  width: 22.5%;
-  border-radius: 4px;
-}
-
-.search-bar input{
-  width: 400px;
+.panel-default > .panel-heading + .panel-collapse > .panel-body {
+  background-color: #eee;
 }

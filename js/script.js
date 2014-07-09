@@ -1,5 +1,11 @@
 $(document).ready(function() {
 
+/*-----------------------------------------------------------------------------------*/
+/*  Dropdown cateogry filter code 
+/*  Reference: http://www.evoluted.net/thinktank/web-development/jquery-filtering
+/*-----------------------------------------------------------------------------------*/
+
+
   $('#gradeFilter li a').click(function() {
     // fetch the class of the clicked item
     var ourClass = $(this).attr('class');
@@ -74,7 +80,12 @@ $(document).ready(function() {
       $('#roster').children('div.item').show();
     }
    });
-   
+
+  /*-----------------------------------------------------------------------------------*/
+  /*  Grid/List view switch code 
+  /*  Reference: www.bootsnip.com
+  /*-----------------------------------------------------------------------------------*/
+
   $('#list').click(function(event){
       event.preventDefault();
       $('#roster .item').removeClass('grid-group-item');
@@ -122,6 +133,10 @@ $(document).ready(function() {
       $('#roster .profile-layout-btn').addClass('col-md-12');
       $('#roster .player-btn').addClass('btn-group-justified');
    });
+
+  /*-----------------------------------------------------------------------------------*/
+  /*  Expand/Collapse icon switch code
+  /*-----------------------------------------------------------------------------------*/
 
   $('#gen-info').click(function(event){
     event.preventDefault();
@@ -186,7 +201,5 @@ $(document).ready(function() {
     }
       
   });
-
-  $('#import-roster').popover('show');
     
 });
